@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>style</title>
+	<meta charset="UTF-8">
+	<meta viewport="width=device-width,initial-scale=0.1">
+	<link rel="stylesheet" href="style.css">
+		<style>
+			#in{
+				color:purple;
+			}
+			
+			#new{
+				color:pink;
+			}
+			
+			input~#child{
+				border:2px solid red;
+			}
+			[type="text"]{
+				border:3px solid red;
+			}
+			
+			#child > h1{
+				color:pink;
+			}
+			
+			#child + h1{
+				color:blue;
+			}
+			
+		</style>
+</head>
+<body>
+		<section id="css-ways">
+		<div id="css">
+			
+			<!--inline css-->
+				<h1 style="color:red;">inline</h1>
+				
+			<!--internal css-->
+				<h2 id="in">Internal</h2>
+				
+			<!--External-->
+				<h3 id="ext">External</h3>
+		
+		</div>
+		</section>
+		
+		
+		<h1 id="new" style="color:orange;">new</h1><!--inline is the first priority , id selector is the secondary priority-->
+		<h1 id="blue" >external</h1>
+		
+		<br>
+		<hr>
+		
+		
+		<section id="css-selctors">
+		<div id="selectors">
+		
+			<!--attribute selector with internal css way-->
+				<input type="text">	
+				
+					<div id="child">
+						<h1>Hellooo</h1>
+					</div>
+					
+					<h1>hii</h1>
+					
+				
+					
+			
+		
+		</div>
+		</section>
+</body>
